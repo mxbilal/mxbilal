@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#070B0E"/>
+      <stop offset="40%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#0A1014"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.6" fill="#1F6FEB" opacity="0.12"/>
+    </pattern>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1F6FEB"/>
+      <stop offset="100%" stop-color="#58A6FF"/>
+    </linearGradient>
+    <linearGradient id="fade-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1F6FEB" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#1F6FEB" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    @keyframes float-slow {
+      0%, 100% { transform: translate(0, 0) rotate(0deg); }
+      25% { transform: translate(2px, -5px) rotate(1deg); }
+      75% { transform: translate(-2px, 3px) rotate(-1deg); }
+    }
+    @keyframes float-med {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(-3px, -7px); }
+    }
+    @keyframes draw-line {
+      from { stroke-dashoffset: 220; }
+      to { stroke-dashoffset: 0; }
+    }
+    @keyframes fade-up {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    .g1 { animation: float-slow 10s ease-in-out infinite; }
+    .g2 { animation: float-med 8s ease-in-out infinite; animation-delay: -2s; }
+    .g3 { animation: float-slow 12s ease-in-out infinite; animation-delay: -5s; }
+    .accent-line {
+      stroke-dasharray: 220;
+      stroke-dashoffset: 220;
+      animation: draw-line 2s cubic-bezier(0.4, 0, 0.2, 1) forwards 0.3s;
+    }
+    .name {
+      font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 52px;
+      fill: #E6EDF3;
+      letter-spacing: -0.5px;
+    }
+    .role {
+      font-family: 'SF Mono', 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+      font-weight: 500;
+      font-size: 15px;
+      fill: #58A6FF;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+    .meta {
+      font-family: 'SF Mono', 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+      font-weight: 400;
+      font-size: 12.5px;
+      fill: #484F58;
+      letter-spacing: 1px;
+    }
+    .cursor {
+      animation: blink 1.2s step-end infinite;
+      fill: #58A6FF;
+    }
+    .ver {
+      font-family: 'SF Mono', 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+      font-size: 10px;
+      fill: #21262D;
+      letter-spacing: 2px;
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="900" height="280" fill="url(#bg)"/>
+  <rect width="900" height="280" fill="url(#grid)"/>
+
+  <!-- Top subtle border -->
+  <rect width="900" height="1" fill="url(#accent-grad)" opacity="0.3"/>
+
+  <!-- Geometric accents - right side -->
+  <g class="g1" opacity="0.06">
+    <rect x="680" y="30" width="85" height="85" rx="4" fill="none" stroke="#58A6FF" stroke-width="1" transform="rotate(15 722 72)"/>
+  </g>
+  <g class="g2" opacity="0.05">
+    <circle cx="790" cy="190" r="45" fill="none" stroke="#58A6FF" stroke-width="0.7"/>
+    <circle cx="790" cy="190" r="28" fill="none" stroke="#58A6FF" stroke-width="0.4"/>
+  </g>
+  <g class="g3" opacity="0.04">
+    <polygon points="840,50 870,102 810,102" fill="none" stroke="#58A6FF" stroke-width="0.7"/>
+  </g>
+  <g class="g2" opacity="0.04">
+    <rect x="730" y="120" width="35" height="35" rx="2" fill="none" stroke="#58A6FF" stroke-width="0.6" transform="rotate(-20 747 137)"/>
+  </g>
+
+  <!-- Left decorative elements -->
+  <g class="g3" opacity="0.035">
+    <circle cx="40" cy="240" r="20" fill="none" stroke="#58A6FF" stroke-width="0.6"/>
+  </g>
+
+  <!-- Accent line -->
+  <line class="accent-line" x1="72" y1="138" x2="292" y2="138" stroke="url(#fade-line)" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Name -->
+  <text class="name" x="72" y="125">Muhammad Bilal</text>
+
+  <!-- Role with cursor -->
+  <text class="role" x="74" y="168">Full Stack Developer</text>
+  <rect class="cursor" x="294" y="155" width="2" height="16" rx="1"/>
+
+  <!-- Meta info -->
+  <text class="meta" x="74" y="205">5+ years  //  React  //  Next.js  //  Node.js  //  NestJS</text>
+  <text class="meta" x="74" y="228">Islamabad, Pakistan</text>
+
+  <!-- Version tag -->
+  <text class="ver" x="810" y="268">v5.0</text>
+
+  <!-- Bottom accent line -->
+  <rect y="279" width="900" height="1" fill="url(#accent-grad)" opacity="0.15"/>
+</svg>
