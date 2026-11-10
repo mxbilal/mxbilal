@@ -59,10 +59,20 @@
 <tr>
 <td width="100%" valign="top">
 
-### TraderOS &nbsp; <sup>🔥 Active</sup>
-<sub>React · TypeScript · NestJS · Supabase · Stripe · Redux Toolkit · RTK Query · MUI · Tailwind · Chart.js · AWS ECS</sub>
+### <a href="https://beta.traderos.ai">TraderOS</a> &nbsp; <sup>🔥 Active</sup> &nbsp; <sub><i>FinTech / AI Trading Platform</i></sub>
+<sub>React · TypeScript · Vite · FastAPI · NestJS · Supabase</sub>
 
-Subscription-based SaaS trading platform — real-time market intelligence, 18+ technical analysis report types, AI-powered strategy builder with backtesting, economic calendar, and a credit-based billing system powered by Stripe. Full-stack: React frontend with advanced charting + NestJS backend deployed on AWS ECS via CI/CD.
+AI trading workspace for chat-driven research, market reports, a TradingView extension, and journal workflows. Primary frontend engineer on the product — shipped the live React app (Harness workspace & chat, reports, TradingView extension) and the NestJS billing/auth surfaces running on [beta.traderos.ai](https://beta.traderos.ai).
+
+</td>
+</tr>
+<tr>
+<td width="100%" valign="top">
+
+### <a href="https://eventooz.com">Eventooz</a> &nbsp; <sub><i>Events / SaaS</i></sub>
+<sub>Next.js · TypeScript · NestJS · Supabase · Razorpay · Tailwind CSS · AWS · Terraform</sub>
+
+Event platform for India — attendees discover local events, organizers run registrations, paid tickets, QR passes and check-in. Built the attendee & organizer web app, the NestJS API and the AWS deployment: event discovery, Razorpay checkout, QR passes, the organizer dashboard, and production hosting on [eventooz.com](https://eventooz.com).
 
 </td>
 </tr>
@@ -87,37 +97,34 @@ VoIP-powered CRM — REST APIs for booking & staff management, React frontend wi
 
 </td>
 </tr>
-<tr>
-<td width="50%" valign="top">
-
-### My Docile
-<sub>TypeScript · Next.js · Express.js · MongoDB · AWS</sub>
-
-Investment platform with product purchasing and withdrawal. Full-stack development deployed on AWS EC2.
-
-</td>
-<td width="50%" valign="top">
-
-### Traddoo Trading App
-<sub>Next.js · MUI · Tailwind · Chart.js · GraphQL</sub>
-
-Trading platform with real-time charts and GraphQL API integration. Built responsive UI with data visualizations.
-
-</td>
-</tr>
 </table>
+
+<br/>
+
+## Open Source
+
+**[medusajs/medusa](https://github.com/medusajs/medusa)** <sub>(37k ★ commerce platform)</sub> — Reported [#17755](https://github.com/medusajs/medusa/issues/17755): the admin user-edit form silently swallowed server errors. Traced the root cause through the form, mutation hook and query client; the analysis was adopted upstream and the fix merged the same day ([#17756](https://github.com/medusajs/medusa/pull/17756)).
 
 <br/>
 
 ---
 
 <p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=mxbilal&show_icons=true&hide_border=true&count_private=true&bg_color=0D1117&title_color=58A6FF&icon_color=1F6FEB&text_color=8B949E&ring_color=1F6FEB" alt="GitHub Stats"/>
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mxbilal&layout=compact&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=8B949E&langs_count=8" alt="Top Languages"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=mxbilal&show_icons=true&hide_border=true&count_private=true&bg_color=0D1117&title_color=58A6FF&icon_color=1F6FEB&text_color=8B949E&ring_color=1F6FEB">
+    <img width="49%" src="https://github-readme-stats.vercel.app/api?username=mxbilal&show_icons=true&hide_border=true&count_private=true&bg_color=FFFFFF&title_color=1F6FEB&icon_color=1F6FEB&text_color=57606A&ring_color=1F6FEB" alt="GitHub Stats"/>
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=mxbilal&layout=compact&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=8B949E&langs_count=8">
+    <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mxbilal&layout=compact&hide_border=true&bg_color=FFFFFF&title_color=1F6FEB&text_color=57606A&langs_count=8" alt="Top Languages"/>
+  </picture>
 </p>
 
 <p align="center">
-  <img width="55%" src="https://github-readme-streak-stats.herokuapp.com/?user=mxbilal&hide_border=true&background=0D1117&ring=1F6FEB&fire=58A6FF&currStreakLabel=58A6FF&sideLabels=8B949E&currStreakNum=E6EDF3&sideNums=E6EDF3&dates=484F58" alt="GitHub Streak"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=mxbilal&hide_border=true&background=0D1117&ring=1F6FEB&fire=58A6FF&currStreakLabel=58A6FF&sideLabels=8B949E&currStreakNum=E6EDF3&sideNums=E6EDF3&dates=484F58">
+    <img width="55%" src="https://streak-stats.demolab.com?user=mxbilal&hide_border=true&background=FFFFFF&ring=1F6FEB&fire=1F6FEB&currStreakLabel=1F6FEB&sideLabels=57606A&currStreakNum=24292F&sideNums=24292F&dates=8B949E" alt="GitHub Streak"/>
+  </picture>
 </p>
 
 ---
